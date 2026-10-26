@@ -38,3 +38,6 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+### Vendors du dossier static ###
+/src/main/resources/static/vendor/
