@@ -34,7 +34,7 @@ entity "utilisateur" as utilisateur {
 entity "role" as role {
     🔑 <b>id_role</b> : BIGINT <<PK, AI>>
     --
-    <b>nom</b> : VARCHAR(50) NOT NULL
+    <b>nom</b> : VARCHAR(50) NOT NULL UNIQUE
 }
 
 tache }o-down-|| utilisateur : appartient a

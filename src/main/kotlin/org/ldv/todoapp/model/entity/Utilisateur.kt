@@ -5,7 +5,6 @@ import jakarta.persistence.*
 @Entity
 @Table(name = "utilisateur")
 open class Utilisateur(
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_utilisateur")
@@ -21,10 +20,6 @@ open class Utilisateur(
     open var email: String = "",
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(
-        name = "fkid_role",
-        referencedColumnName = "id_role",
-        nullable = false
-    )
+    @JoinColumn(name = "fkid_role", referencedColumnName = "id_role", nullable = false)
     open var role: Role? = null
 )

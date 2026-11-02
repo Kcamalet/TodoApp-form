@@ -5,7 +5,6 @@ import jakarta.persistence.*
 @Entity
 @Table(name = "role")
 open class Role(
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_role")

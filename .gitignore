@@ -40,4 +40,4 @@ out/
 .kotlin
 
 ### Vendors du dossier static ###
-/src/main/resources/static/vendor/
+#/src/main/resources/static/vendor/

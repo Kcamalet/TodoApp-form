@@ -6,8 +6,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "tache")
-open class Tache(
-
+class Tache(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_tache")
@@ -29,10 +28,6 @@ open class Tache(
     open var terminee: Boolean = false,
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(
-        name = "fkid_utilisateur",
-        referencedColumnName = "id_utilisateur",
-        nullable = false
-    )
+    @JoinColumn( name = "fkid_utilisateur", referencedColumnName = "id_utilisateur", nullable = false)
     open var utilisateur: Utilisateur? = null
 )
